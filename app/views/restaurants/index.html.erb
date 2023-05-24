@@ -1,0 +1,14 @@
+<h1 class="p-3">Restaurants <%= link_to new_restaurant_path do%>
+<i class="fa-solid fa-circle-plus"></i>
+<% end %></h1>
+
+<div class="" style="width: 18rem;">
+  <% @restaurants.each do |restaurant| %>
+  <%= render restaurant %>
+  <div class="card-icon m-3">
+  <%= link_to restaurant do %>
+  <i class="fa-regular fa-eye"></i>
+  <% end %>
+  </div>
+  <% end %>
+</div>

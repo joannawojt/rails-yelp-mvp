@@ -1,0 +1,11 @@
+<div>
+  <%= render @restaurant %>
+  <div class="card-icon m-3">
+  <%= link_to restaurants_path do %>
+  <i class="fa-solid fa-arrow-left"></i>
+  <% end %>
+
+    <div>
+      <%= link_to "Add review", new_restaurant_review_path(@restaurant) %>
+    </div>
+</div>

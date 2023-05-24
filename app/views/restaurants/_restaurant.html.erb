@@ -1,0 +1,26 @@
+<div class="card-body mb-1">
+<div id="<%= dom_id restaurant %>">
+  <p class="card-name">
+    <strong><%= restaurant.id %>:</strong>
+    <%= restaurant.name %>
+  </p>
+
+  <p class="card-address">
+    <strong>Address:</strong>
+    <%= restaurant.address %>
+  </p>
+
+  <p class="card-category">
+    <strong>Category:</strong>
+    <%= restaurant.category %>
+  </p>
+
+  <p class="card-review">
+    <strong>Review:</strong>
+    <% restaurant.reviews.each do |review| %>
+    <%= review.content %>
+    <% end %>
+  </p>
+
+</div>
+</div>
